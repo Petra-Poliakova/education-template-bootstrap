@@ -7831,6 +7831,9 @@ body {
   .primary-nav .nav .nav-item a {
     color: #223441; }
 
+.secondary-nav h1 {
+  font-size: 1.75rem; }
+
 .secondary-nav {
   background: #223441; }
   .secondary-nav .navbar-brand h3 {
@@ -7858,6 +7861,8 @@ body {
     height: 650px;
     object-fit: cover; }
   #mainCacousel h1 {
+    font-size: 1.75rem; }
+  #mainCacousel h2 {
     font-family: "Raleway", sans-serif;
     line-height: 1; }
   #mainCacousel .book {
@@ -7865,6 +7870,12 @@ body {
 
 #benefits {
   text-align: center; }
+  #benefits .benefit-desc {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    min-height: 70px; }
   #benefits i {
     font-size: 3rem; }
   #benefits a {
@@ -7887,10 +7898,13 @@ body {
   position: absolute; }
 #popularCourses .card-title {
   color: #006d3c;
-  text-transform: uppercase; }
-#popularCourses h3 {
-  text-align: center;
-  font-family: "Raleway", sans-serif; }
+  text-transform: uppercase;
+  font-size: 1.25rem; }
+#popularCourses h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.75rem; }
+#popularCourses .card-footer {
+  background: none; }
 
 #saleAction {
   background: url("https://images.unsplash.com/photo-1489486501123-5c1af10d0be6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80") bottom center no-repeat;
@@ -7909,24 +7923,27 @@ body {
     color: #fff;
     font-size: 1.5rem;
     z-index: 10; }
-    #saleAction .saleText h3 {
+    #saleAction .saleText h1 {
       color: #2db27f;
-      font-weight: 500; }
+      font-weight: 500;
+      font-size: 1.75rem; }
     #saleAction .saleText a {
       border-radius: 2rem; }
 
-#instructors h3 {
+#instructors h1 {
   text-align: center;
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  font-size: 1.75rem; }
 #instructors .divider {
   width: 60%;
   height: 1px;
   margin: 0 auto;
   background: #006d3c; }
-#instructors h5 {
+#instructors h2 {
   color: #006d3c;
   margin: 15px 0;
-  text-align: center; }
+  text-align: center;
+  font-size: 1.25rem; }
 #instructors img {
   width: 100%;
   height: auto;
@@ -7935,9 +7952,13 @@ body {
 
 #testimonial {
   text-align: center; }
+  #testimonial h1 {
+    font-size: 1.75rem; }
   #testimonial i {
     opacity: 0.3; }
 
+#faq h1 {
+  font-size: 1.75rem; }
 #faq .card-header {
   background-color: rgba(34, 52, 65, 0.1); }
   #faq .card-header .btn {
@@ -7945,6 +7966,8 @@ body {
   #faq .card-header .btn:hover {
     color: #2db27f; }
 
+#blog h1 {
+  font-size: 1.75rem; }
 #blog .card-img,
 #blog .card-img-top {
   border-top-left-radius: 0;
@@ -7962,26 +7985,31 @@ body {
   #blog .card-text .rightSide {
     float: right; }
 
+#blog .card-title {
+  font-size: 1.25rem; }
 #blog .card-img-overlay {
   top: auto; }
 
 #footer {
   background: #071b27; }
 
+.modal-header h1 {
+  font-size: 1.25rem; }
+
 @media (max-width: 768px) {
   #mainCacousel img {
     height: 400px; }
   #mainCacousel h1 {
-    font-size: 2rem; }
-  #mainCacousel h3 {
     font-size: 1rem; }
+  #mainCacousel h2 {
+    font-size: 2rem; }
 
   #benefits h5 {
     min-height: 100px; }
 
   #saleAction .saleText {
     font-size: 1rem; }
-  #saleAction h3 {
+  #saleAction h1 {
     font-size: 1.25rem; }
   #saleAction .btn-lg, #saleAction .btn-group-lg > .btn {
     font-size: 1rem; } }
