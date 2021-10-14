@@ -7842,7 +7842,7 @@ body {
 #mainCacousel {
   width: 100%;
   position: relative; }
-  #mainCacousel #overlay {
+  #mainCacousel .overlay {
     background: rgba(0, 0, 0, 0.5);
     position: absolute;
     top: 0;
@@ -7860,9 +7860,8 @@ body {
   #mainCacousel h1 {
     font-family: "Raleway", sans-serif;
     line-height: 1; }
-  #mainCacousel #book {
-    font-size: 1.5rem;
-    border-radius: 2rem; }
+  #mainCacousel .book {
+    font-size: 1.5rem; }
 
 #benefits {
   text-align: center; }
@@ -7873,7 +7872,7 @@ body {
   #benefits h5 {
     min-height: 70px; }
 
-#popularCourses #price {
+#popularCourses .price {
   position: absolute;
   top: 0;
   right: 0;
@@ -7882,8 +7881,12 @@ body {
   color: #fff;
   border-radius: 10px;
   background: #2db27f; }
+#popularCourses .card {
+  position: relative; }
+#popularCourses .btn {
+  position: absolute; }
 #popularCourses .card-title {
-  color: #2db27f;
+  color: #006d3c;
   text-transform: uppercase; }
 #popularCourses h3 {
   text-align: center;
@@ -7919,14 +7922,15 @@ body {
   width: 60%;
   height: 1px;
   margin: 0 auto;
-  background: #2db27f; }
+  background: #006d3c; }
 #instructors h5 {
-  color: #2db27f;
+  color: #006d3c;
   margin: 15px 0;
   text-align: center; }
 #instructors img {
   width: 100%;
-  min-height: 175px;
+  height: auto;
+  /* min-height: 175px; */
   margin-bottom: 25px; }
 
 #testimonial {
@@ -7936,6 +7940,10 @@ body {
 
 #faq .card-header {
   background-color: rgba(34, 52, 65, 0.1); }
+  #faq .card-header .btn {
+    color: #006d3c; }
+  #faq .card-header .btn:hover {
+    color: #2db27f; }
 
 #blog .card-img,
 #blog .card-img-top {
@@ -7969,6 +7977,19 @@ body {
     font-size: 1rem; }
 
   #benefits h5 {
-    min-height: 100px; } }
+    min-height: 100px; }
+
+  #saleAction .saleText {
+    font-size: 1rem; }
+  #saleAction h3 {
+    font-size: 1.25rem; }
+  #saleAction .btn-lg, #saleAction .btn-group-lg > .btn {
+    font-size: 1rem; } }
+@media (max-width: 768px) and (max-width: 576px) {
+  #blog .card-title {
+    font-size: 1rem; }
+
+  #mainCacousel .btn {
+    font-size: 1rem; } }
 
 /*# sourceMappingURL=app.css.map */

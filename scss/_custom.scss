@@ -1,0 +1,244 @@
+$color-secondary: #2db27f;
+$color-dark: #223441;
+$color-title: #006d3c;
+//$color-title: #1e7e34;
+
+body {
+  color: $color-dark;
+  font-family: "Raleway", sans-serif;
+}
+.primary-nav {
+  background: rgba($color-dark, $alpha: 0.1);
+  .nav {
+    .nav-item {
+      i {
+        color: $color-secondary;
+        padding-right: 5px;
+      }
+      a {
+        color: $color-dark;
+      }
+    }
+  }
+}
+
+.secondary-nav {
+  background: $color-dark;
+  .navbar-brand h3 {
+    font-weight: 300;
+  }
+  .navbar {
+    font-size: 1.4rem;
+    font-weight: 100;
+  }
+}
+#mainCacousel {
+  width: 100%;
+  position: relative;
+
+  .overlay {
+    background: rgba($color: #000000, $alpha: 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  .carousel-caption {
+    bottom: 10%;
+    z-index: 3;
+  }
+  img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+  }
+  h1 {
+    font-family: "Raleway", sans-serif;
+    line-height: 1;
+  }
+  .book {
+    font-size: 1.5rem;
+  }
+}
+#benefits {
+  text-align: center;
+  i {
+    font-size: 3rem;
+  }
+  a {
+    border-radius: 2rem;
+  }
+  h5 {
+    min-height: 70px;
+  }
+}
+#popularCourses {
+  .price {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 10px;
+    padding: 5px 15px;
+    color: #fff;
+    border-radius: 10px;
+    background: $color-secondary;
+  }
+  .card {
+    position: relative;
+  }
+  .btn {
+    position: absolute;
+  }
+  .card-title {
+    color: $color-title;
+    text-transform: uppercase;
+  }
+  h3 {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+  }
+}
+#saleAction {
+  background: url("https://images.unsplash.com/photo-1489486501123-5c1af10d0be6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80")
+    bottom center no-repeat;
+  background-size: 100%;
+  min-height: 450px;
+  background-size: cover;
+  background-position: bottom center;
+  position: relative;
+  z-index: 1;
+  .saleBg {
+    background: rgba($color-dark, $alpha: 0.9);
+    height: 450px;
+    width: 100%;
+    z-index: 5;
+  }
+  .saleText {
+    color: #fff;
+    font-size: 1.5rem;
+    z-index: 10;
+    h3 {
+      color: $color-secondary;
+      font-weight: 500;
+    }
+    a {
+      border-radius: 2rem;
+    }
+  }
+}
+#instructors {
+  h3 {
+    text-align: center;
+    font-family: "Raleway", sans-serif;
+  }
+  .divider {
+    width: 60%;
+    height: 1px;
+    margin: 0 auto;
+    background: $color-title;
+  }
+  h5 {
+    color: $color-title;
+    margin: 15px 0;
+    text-align: center;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    /* min-height: 175px; */
+    margin-bottom: 25px;
+  }
+}
+#testimonial {
+  text-align: center;
+  i {
+    opacity: 0.3;
+  }
+}
+#faq {
+  .card-header {
+    background-color: rgba($color-dark, $alpha: 0.1);
+    .btn {
+      color: $color-title;
+    }
+    .btn:hover {
+      color: $color-secondary;
+    }
+  }
+}
+#blog {
+  .card-img,
+  .card-img-top {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  .card-img,
+  .card-img-bottom {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .card {
+    border-radius: 0;
+  }
+  .card-text {
+    background-color: rgba($color-dark, $alpha: 0.01);
+    .btn {
+      float: left;
+    }
+    .rightSide {
+      float: right;
+    }
+  }
+}
+#blog {
+  .card-img-overlay {
+    top: auto;
+  }
+}
+
+#footer {
+  background: #071b27;
+}
+@media (max-width: 768px) {
+  #mainCacousel {
+    img {
+      height: 400px;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+  }
+  #benefits {
+    h5 {
+      min-height: 100px;
+    }
+  }
+  #saleAction {
+    .saleText {
+      font-size: 1rem;
+    }
+    h3 {
+      font-size: 1.25rem;
+    }
+    .btn-lg {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 576px) {
+    #blog {
+      .card-title {
+        font-size: 1rem;
+      }
+    }
+    #mainCacousel {
+      .btn {
+        font-size: 1rem;
+      }
+    }
+  }
+}
